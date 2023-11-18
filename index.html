@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <nav><!--menu-inicio-->
+
+    <div class="logo"><img src="im/logo.png" alt="logo"> </div>
+
+    <div class="menu-btn">
+      <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+      <li> <a href="#page-first" class="active">Inicio</a> </li>
+      <li> <a href="#page-login">Reserva</a> </li>
+      <li> <a href="#page-second">Pratos</a> </li>
+      <li> <a href="#page-third">Bebidas</a> </li>
+      <li> <a href="#page-fourth">Endereço</a> </li>
+
+    </ul>
+
+  </nav>
+
+  <section id="page-first"><!--pagina-1-inicio-->
+
+    <div id="wrap">
+      <a href="#page-login"><button class="button">RESERVAS</button></a>
+    </div>
+
+    <h1>Puro e exótico<br><span>sabor</span></h1>
+
+    <h4>venha conhecer nosso restaurante <br>o melhor da região</h4>
+
+  </section>
+
+  <section id="page-login">
+
+    <div class="interface">
+
+      <h2 class="titulo"><span>Puro e exótico sabor</span><br><br> Possui um espaço privativo para jantares e eventos
+        com até 35 pessoas.</h2>
+
+      <form method="post" action="envia.php">
+        <input type="text" name="nome" placeholder="Seu nome completo" required>
+        <input type="text" name="telefone" placeholder="Seu celular"required>
+        <input type="text" id="cpf" maxlength="11" placeholder="Seu CPF">
+        <input type="date" name="data" placeholder="Data" style="color: #727272;" required>
+
+        <select id="country" name="country" required style="color: #727272;">
+          <option value="0" selected disabled >Escolha a quantidade de pessoas</option>
+          <option value="1 Pessoa">1 Pessoa</option >
+          <option value="2 Pessoas">2 Pessoas</option>
+          <option value="3 Pessoas">3 Pessoas</option>
+          <option value="4 Pessoas">4 Pessoas</option>
+          <option value="5 Pessoas">5 Pessoas</option>
+          <option value="6 Pessoas">6 Pessoas</option>
+          <option value="7 Pessoas">7 Pessoas</option>
+          <option value="8 Pessoas">8 Pessoas</option>
+          <option value="9 Pessoas">9 Pessoas</option>
+          <option value="10 Pessoas">10 Pessoas</option>
+          <option value="11 Pessoas">11 Pessoas</option>
+          <option value="12 Pessoas">12 Pessoas</option>
+          <option value="13 Pessoas">13 Pessoas</option>
+          <option value="14 Pessoas">14 Pessoas</option>
+          <option value="15 Pessoas">15 Pessoas</option>
+        </select>
+
+
+        <div class="btn-enviar">
+          <input type="submit" value="RESERVAR">
+        </div>
+      </form>
+
+    </div>
+
+  </section>
+
+  <section id="page-second"> <!--pagina-2-inicio-Pratos-->
+
+    <h1 class="text-second">Pratos</h1>
+
+    <div class="container">
+      <!-- Card 1 -->
+      <div class="card card-1">
+        <!-- card-header -->
+        <div class="card-header">
+          <img src="im/pratos-exóticos-capa.webp" class="card-img" />
+        </div>
+        <!-- card-header -->
+
+        <!-- card-body -->
+        <div class="card-body">
+          <h3 class="card-titulo">Pratos exóticos</h3>
+          <p class="card-texto">
+            Comidas exóticas: pratos para se aventurar no turismo gastronômico
+          </p>
+        </div>
+        <!-- card-body -->
+
+        <!-- card-footer -->
+        <div class="card-footer">
+          <a href="#">Ver Mais</a>
+        </div>
+        <!-- card-footer -->
+      </div>
+      <!-- Card 1 -->
+
+      <!-- Card 2 -->
+      <div class="card card-2">
+        <!-- card-header -->
+        <div class="card-header">
+          <img src="im/sobremesa-capa.jpg" class="card-img" />
+        </div>
+        <!-- card-header -->
+
+        <!-- card-body -->
+        <div class="card-body">
+          <h3 class="card-titulo">Sobremesas</h3>
+          <p class="card-texto">
+            As melhores sobremesa, que tem gosto de carinho, de aconchego , lembra casa de vó, família reunida
+          </p>
+        </div>
+        <!-- card-body -->
+
+        <!-- card-footer -->
+        <div class="card-footer">
+          <a href="#">Ver Mais</a>
+        </div>
+        <!-- card-footer -->
+      </div>
+      <!-- Card 2 -->
+
+      <!-- Card 3 -->
+      <div class="card card-3">
+        <!-- card-header -->
+        <div class="card-header">
+          <img src="im/carne-assada-capa.jpg" class="card-img" />
+        </div>
+        <!-- card-header -->
+
+        <!-- card-body -->
+        <div class="card-body">
+          <h3 class="card-titulo">Churrascos</h3>
+          <p class="card-texto">
+            As melhores carnes ao ponto e suculentas na brasa
+          </p>
+        </div>
+        <!-- card-body -->
+
+        <!-- card-footer -->
+        <div class="card-footer">
+          <a href="#">Ver Mais</a>
+        </div>
+        <!-- card-footer -->
+      </div>
+      <!-- Card 3 -->
+
+
+    </div>
+
+  </section>
+
+  <section id="page-third"> <!--pagina-3-inicio-Bebidas-->
+
+    <h1 class="text-third">Bebidas</h1>
+
+    <div class="container">
+      <!-- Card 1 -->
+      <div class="card card-1">
+        <!-- card-header -->
+        <div class="card-header">
+          <img src="im/capa-vinhos.jpg" class="card-img" />
+        </div>
+        <!-- card-header -->
+
+        <!-- card-body -->
+        <div class="card-body">
+          <h3 class="card-titulo">Adega de Vinhos</h3>
+          <p class="card-texto">
+            Entre as melhores adegas climatizadas, a Adega de Vinhos Philco PAD8 oferece a maneira mais eficaz de
+            preservar suas bebidas, garantindo que elas permaneçam frescas e deliciosas.
+          </p>
+        </div>
+        <!-- card-body -->
+
+        <!-- card-footer -->
+        <div class="card-footer">
+          <a href="#">Ver Mais</a>
+        </div>
+        <!-- card-footer -->
+      </div>
+      <!-- Card 1 -->
+
+      <!-- Card 2 -->
+      <div class="card card-2">
+        <!-- card-header -->
+        <div class="card-header">
+          <img src="im/capa-cerveja.jpg" class="card-img" />
+        </div>
+        <!-- card-header -->
+
+        <!-- card-body -->
+        <div class="card-body">
+          <h3 class="card-titulo">Cervejas</h3>
+          <p class="card-texto">
+            As melhores cervejas do Brasil.
+          </p>
+        </div>
+        <!-- card-body -->
+
+        <!-- card-footer -->
+        <div class="card-footer">
+          <a href="#">Ver Mais</a>
+        </div>
+        <!-- card-footer -->
+      </div>
+      <!-- Card 2 -->
+
+      <!-- Card 3 -->
+      <div class="card card-3">
+        <!-- card-header -->
+        <div class="card-header">
+          <img src="im/capa-suco.jpg" class="card-img" />
+        </div>
+        <!-- card-header -->
+
+        <!-- card-body -->
+        <div class="card-body">
+          <h3 class="card-titulo">Sucos Naturais</h3>
+          <p class="card-texto">
+            São muitos os sucos naturais de frutas. Sucos naturais feitos com frutas e hortaliças in natura podem ser
+            consumidos como parte de uma alimentação adequada e saudável
+          </p>
+        </div>
+        <!-- card-body -->
+
+        <!-- card-footer -->
+        <div class="card-footer">
+          <a href="#">Ver Mais</a>
+        </div>
+        <!-- card-footer -->
+      </div>
+      <!-- Card 3 -->
+
+      <!-- Link Tutorial: https://youtu.be/UEm65E2_Y2Q -->
+    </div>
+
+  </section>
+
+  <section id="page-fourth"> <!--pagina-4-inicio-Reserva-->
+
+    <p><span>Almoço e Jantar</span><br><br>
+      <span>Segunda a Sexta</span><br>
+      11h às 15h <br>
+      19h às 23:30h <br><br>
+      <span>Sábado</span><br>
+      11h às 23:30h<br><br>
+      <span>Domingos</span><br>
+      11h às 00:30h <br> <br>
+      <span>Endereço</span><br>
+      Rua Barão de Capanema, 549 - Jardins
+      São Paulo . SP - Brasil
+    </p>
+
+
+    <div class="mapa">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7314.746299628724!2d-46.63810743175119!3d-23.55503812738741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1697927336763!5m2!1spt-BR!2sbr"
+        allowfullscreen="#" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+  </section>
+
+  <footer> <!--Rodape-inicio-->
+    <h1> ® 2023</h1>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
