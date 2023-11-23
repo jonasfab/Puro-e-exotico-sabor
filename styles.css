@@ -115,17 +115,6 @@ section {
 
 }
 
-#page-first h4 {
-    position: absolute;
-    color: white;
-    font-size: 20px;
-    text-shadow: 1px 1px 6px #494848;
-    text-align: center;
-    margin-top: 50px;
-
-}
-
-
 /*botão-reserva-inicio*/
 #wrap {
     height: 100%;
@@ -587,7 +576,7 @@ footer {
 
         width: 90px;
         position: relative;
-right: 60px;
+        right: 60px;
     }
 
 
